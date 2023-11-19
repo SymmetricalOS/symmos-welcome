@@ -21,8 +21,6 @@ class MainView extends VBox {
 
 			if (vivaldi.selected)
 				packages.push("vivaldi");
-			if (brave.selected)
-				packages.push("brave-browser");
 			if (chromium.selected)
 				packages.push("chromium");
 

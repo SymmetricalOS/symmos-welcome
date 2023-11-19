@@ -15,7 +15,6 @@
         <tabview id="tv">
             <vbox text="Browsers">
                 <checkbox text="Vivaldi" id="vivaldi" selected="false" />
-                <checkbox text="Brave" id="brave" selected="false" />
                 <checkbox text="Chromium" id="chromium" selected="false" />
             </vbox>
             <vbox text="Communication">
