@@ -1,0 +1,55 @@
+<vbox style="padding: 5px;" horizontalAlign="center">
+    <style>
+        #title {
+        font-size: 20px;
+        height: 30px;
+        }
+    </style>
+    <hbox>
+        <label text="Title" id="title" />
+    </hbox>
+    <hbox>
+        <label text="Select software to install" />
+    </hbox>
+    <hbox>
+        <tabview id="tv">
+            <vbox text="Browsers">
+                <checkbox text="Vivaldi" id="vivaldi" selected="false" />
+                <checkbox text="Brave" id="brave" selected="false" />
+                <checkbox text="Chromium" id="chromium" selected="false" />
+            </vbox>
+            <vbox text="Communication">
+                <checkbox text="Discord" id="discord" selected="false" />
+                <checkbox text="Element" id="element" selected="false" />
+                <checkbox text="Signal" id="signal" selected="false" />
+            </vbox>
+            <vbox text="Development">
+                <checkbox text="Base Development Tools" id="base-devel" selected="false" />
+            </vbox>
+            <vbox text="Media">
+                <checkbox text="VLC" id="vlc" selected="false" />
+                <checkbox text="Audacity" id="audacity" selected="false" />
+                <checkbox text="OBS Studio" id="obs" selected="false" />
+                <checkbox text="mpv" id="mpv" selected="false" />
+                <checkbox text="FFmpeg" id="ffmpeg" selected="false" />
+                <checkbox text="HandBrake" id="handbrake" selected="false" />
+                <checkbox text="GNU Image Manipulation Program" id="gimp" selected="false" />
+            </vbox>
+            <vbox text="Office">
+                <checkbox text="LibreOffice" id="libreoffice" selected="false" />
+            </vbox>
+            <vbox text="Security">
+                <checkbox text="KeePassXC" id="keepassxc" selected="false" />
+            </vbox>
+            <vbox text="Utilities">
+                <checkbox text="KDE Connect" id="kdeconnect" selected="false" />
+                <checkbox text="Xarchiver" id="xarchiver" selected="false" />
+                <checkbox text="Qalculate" id="qalculate-gtk" selected="false" />
+            </vbox>
+        </tabview>
+    </hbox>
+    <hbox horizontalAlign="center">
+        <button text="Cancel" id="cancel" />
+        <button text="Finish" id="finish" />
+    </hbox>
+</vbox>
