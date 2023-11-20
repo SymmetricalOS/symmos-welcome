@@ -1,5 +1,6 @@
 package;
 
+import sys.FileSystem;
 import haxe.ui.containers.VBox;
 import haxe.ui.events.MouseEvent;
 
@@ -63,6 +64,7 @@ class MainView extends VBox {
 				packages.push("base-devel");
 
 			Sys.command("xfce4-terminal -x sudo pacman -Syu " + packages.join(" "));
+			FileSystem.deleteFile("~/.config/autostart/piw.desktop");
 			Sys.exit(0);
 		};
 	}
