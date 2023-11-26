@@ -11,6 +11,8 @@ class Main {
 	public static var fullname:String = "";
 
 	public static function main() {
+		Translations.load();
+
 		var app = new HaxeUIApp();
 
 		final osrelease = File.getContent("/etc/symmos-release").split("\n");

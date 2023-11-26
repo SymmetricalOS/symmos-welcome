@@ -9,6 +9,17 @@ class MainView extends VBox {
 	public function new() {
 		super();
 
+		select_software_to_install.text = Translations.get("select_software_to_install");
+		browsers.text = Translations.get("browsers");
+		communication.text = Translations.get("communication");
+		development.text = Translations.get("development");
+		media.text = Translations.get("media");
+		office.text = Translations.get("office");
+		security.text = Translations.get("security");
+		utilities.text = Translations.get("utilities");
+		cancel.text = Translations.get("cancel");
+		finish.text = Translations.get("finish");
+
 		while (Main.fullname == "") {}
 
 		var text = 'Welcome to ${Main.fullname}!';

@@ -9,23 +9,23 @@
         <label text="Title" id="title" />
     </hbox>
     <hbox>
-        <label text="Select software to install" />
+        <label text="Select software to install" id="select_software_to_install" />
     </hbox>
     <hbox>
         <tabview id="tv">
-            <vbox text="Browsers">
+            <vbox text="Browsers" id="browsers">
                 <checkbox text="Vivaldi" id="vivaldi" selected="false" />
                 <checkbox text="Chromium" id="chromium" selected="false" />
             </vbox>
-            <vbox text="Communication">
+            <vbox text="Communication" id="communication">
                 <checkbox text="Discord" id="discord" selected="false" />
                 <checkbox text="Element" id="element" selected="false" />
                 <checkbox text="Signal" id="signal" selected="false" />
             </vbox>
-            <vbox text="Development">
+            <vbox text="Development" id="development">
                 <checkbox text="Base Development Tools" id="base-devel" selected="false" />
             </vbox>
-            <vbox text="Media">
+            <vbox text="Media" id="media">
                 <checkbox text="VLC" id="vlc" selected="false" />
                 <checkbox text="Audacity" id="audacity" selected="false" />
                 <checkbox text="OBS Studio" id="obs" selected="false" />
@@ -34,13 +34,13 @@
                 <checkbox text="HandBrake" id="handbrake" selected="false" />
                 <checkbox text="GNU Image Manipulation Program" id="gimp" selected="false" />
             </vbox>
-            <vbox text="Office">
+            <vbox text="Office" id="office">
                 <checkbox text="LibreOffice" id="libreoffice" selected="false" />
             </vbox>
-            <vbox text="Security">
+            <vbox text="Security" id="security">
                 <checkbox text="KeePassXC" id="keepassxc" selected="false" />
             </vbox>
-            <vbox text="Utilities">
+            <vbox text="Utilities" id="utilities">
                 <checkbox text="KDE Connect" id="kdeconnect" selected="false" />
                 <checkbox text="Xarchiver" id="xarchiver" selected="false" />
                 <checkbox text="Qalculate" id="qalculate-gtk" selected="false" />
