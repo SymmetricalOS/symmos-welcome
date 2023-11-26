@@ -1,3 +1,4 @@
+import sys.FileSystem;
 import sys.io.File;
 
 class Translations {
@@ -5,7 +6,12 @@ class Translations {
 
 	public static function load() {
 		final lang = File.getContent("/etc/locale.conf").split("=")[1].split(".")[0].toLowerCase();
-		final translations = File.getContent("/etc/symmos/lang/symmos-welcome/$lang.lang").split("\n");
+		if (!FileSystem.exists('/etc/symmos/lang/symmos-welcome/$lang.lang')) {
+			Sys.println("Unable to get translations");
+			map = new Map();
+			return;
+		}
+		final translations = File.getContent('/etc/symmos/lang/symmos-welcome/$lang.lang').split("\n");
 		map = new Map();
 		for (translation in translations) {
 			map.set(translation.split("=")[0], translation.split("=")[1]);
